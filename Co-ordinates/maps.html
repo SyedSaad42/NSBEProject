@@ -1,0 +1,12 @@
+<div id="details"></div>
+<script>
+    
+    navigator.geolocation.watchPosition(successCallback);
+
+    function successCallback(position){
+        const { latitude, longitude}=position.coords;
+      
+
+        details.innerHTML +="Latitude of the Vehicle: "+latitude+" | Latitude fo the vehicle: "+ longitude;
+    }
+</script>
